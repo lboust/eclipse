@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      >
+<head>
+<link rel="stylesheet" href="form.css"/>
+<title>Lister les personnes</title>
+</head>
+<body>
+<h1>Lister les personnes</h1>
+<h:form>
+<!-- Lire chaque personne dans la base de données -->
+<table>
+            <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>firstname</th>
+                        <th>lastname</th>
+                        <th>age</th>
+                    </tr>
+            </thead>
+            <tbody>
+<ui:repeat var="person" value="#{Person.list()}" varStatus="status">
+
+                    <tr>
+                        <td>#{person.id}</td>
+                        <td>#{person.firstname}</td>
+                        <td>#{person.lastname}</td>
+                        <td>#{person.age}</td>
+                    </tr>
+</ui:repeat>
+            </tbody>
+             
+        </table>
+
+</h:form>
+</body>
+</html>

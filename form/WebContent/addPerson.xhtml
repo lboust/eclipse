@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      >
+<head>
+<link rel="stylesheet" href="form.css"/>
+<title>Ajouter une personne</title>
+</head>
+<body>
+<h1>Ajouter une personne</h1>
+<h:form>
+	<p>
+	Prénom :
+	<h:inputText type="text" id="firstname" value="#{Person.firstname}"/>
+	</p>
+	<p>
+	Nom : 
+	<h:inputText type="text" id="lastname" value="#{Person.lastname}"/>
+	</p>
+	<p>
+	Age: 
+	<h:inputText type="text" id="age" value="#{Person.age}"/>
+	</p>
+<h:commandButton type="submit" value="Add" action="#{Person.add()}"/><!--  -->
+</h:form>
+</body>
+</html>

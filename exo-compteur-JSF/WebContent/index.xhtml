@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<link rel="stylesheet" href="compteur.css"/>
+<title>Compteur</title>
+</head>
+<body>
+<h:form>
+
+<h:commandButton type="submit" value="OK" action="#{compteur.rdm}"/>
+<h:outputText class="digit" value="#{compteur.centaine}"/>
+<h:outputText class="digit" value="#{compteur.dizaine}"/>
+<h:outputText class="digit" value="#{compteur.unite}"/>
+
+
+
+</h:form>
+</body>
+</html>

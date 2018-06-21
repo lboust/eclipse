@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      >
+<head>
+<link rel="stylesheet" href="guessANumber.css"/>
+<title>Devine un nombre</title>
+</head>
+<body>
+<h1>Devine un nombre entre 1 et 100</h1>
+<h:form>
+	Coups restants : 
+	<h:outputText value="#{GuessANumber.countDown}"/><br/>
+	Entre un nombre entre 1 et 100 :
+	<h:inputText type="text" id="currentNumber" value="#{GuessANumber.currentNumber}"/>
+
+<h:commandButton type="submit" value="Guess" action="#{GuessANumber.guess()}"/><br/>
+<div class="message"><h:outputText  value="#{GuessANumber.outputMessage}"/></div>
+
+</h:form>
+</body>
+</html>

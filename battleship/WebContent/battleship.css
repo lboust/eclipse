@@ -1,0 +1,32 @@
+html{
+	background-image: url(https://www.tomswallpapers.com/pic/201502/1080x1920/tomswallpapers.com-1829.jpg);
+    background-repeat: no-repeat;
+        background-size: 40%;
+}
+
+h1 {
+	color: orange;
+	position: center;
+	width: 400px;
+	border: 4px solid orange;
+	display: flex;
+    flex-direction: column; /*main-axis*/
+    align-items: center;
+}
+img {
+	height: 200px;
+	margin: 10px;
+	margin-right: 20px;
+}
+.reset {
+	margin: 20px;
+}
+.compteur {
+	color: white;
+	 font-size: 2rem;
+}
+
+/* .ocean {
+	background-color: rgb(180, 143, 143);
+	 
+} */
